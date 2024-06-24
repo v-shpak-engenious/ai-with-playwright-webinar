@@ -1,0 +1,12 @@
+{
+  "name": "ai-with-playwright-webinar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/v-shpak-engenious/ai-with-playwright-webinar.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.8"
+  },
+  "scripts": {}
+}
