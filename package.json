@@ -5,7 +5,7 @@
   "repository": "https://github.com/v-shpak-engenious/ai-with-playwright-webinar.git",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.44.1",
+    "@playwright/test": "^1.46.1",
     "@types/node": "^20.14.8"
   },
   "scripts": {}
