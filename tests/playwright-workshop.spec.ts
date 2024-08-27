@@ -8,15 +8,15 @@ test.describe('Booking.com', () => {
 
     await page.goto('https://www.booking.com/');
     await page.getByRole('button', { name: 'Accept' }).click();
-    await page.getByPlaceholder('Where are you going?').fill('Florida');
-    await page.getByRole('button', { name: 'Florida United States' }).click();
+    await page.getByPlaceholder('Where are you going?').fill('Miami');
+    await page.getByRole('button', { name: 'Miami' }).first().click();
     await page.getByLabel('2 September 2024', { exact: true }).click();
     await page.getByLabel('8 September 2024', { exact: true }).click();
     await page.getByRole('button', { name: 'Search' }).click();
     await page.getByLabel('Dismiss sign-in info.').click();
 
     // Assert that we have word Florida in URL
-    expect(page.url()).toContain('Florida');
+    expect(page.url()).toContain('Miami');
 
     // Assert that data-testid="filters-sidebar" should be visible
     expect(await page.isVisible('[data-testid="filters-sidebar"]')).toBe(true);
